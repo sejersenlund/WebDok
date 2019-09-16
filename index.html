@@ -39,42 +39,45 @@
   </section>
     <!-- Container for the image gallery -->
 <div class="gallerycontainer">
+<script type="text/javascript" src="javascript/java.js"></script>
+    <!-- Container for the image gallery -->
+<div class="gallerycontainer">
 
 
   <!-- Full-width images with number text -->
   <div class="slides">
     <div class="numbertext">1 ud af 6</div>
-      <img class="gallery" src="images/b1.jpg" style="width:100%" alt="Galleri">
+      <img src="images/b1.jpg" style="width:100%" class="gallery" alt="galleri">
   </div>
 
   <div class="slides">
     <div class="numbertext">2 ud af 6</div>
-      <img class="gallery" src="images/b2.jpg" style="width:100%" alt="Galleri">
+      <img src="images/b2.jpg" style="width:100%" class="gallery" alt="galleri">
   </div>
 
   <div class="slides">
     <div class="numbertext">3 ud af 6</div>
-      <img class="gallery" src="images/b3.jpg" style="width:100%" alt="Galleri">
+      <img src="images/b3.jpg" style="width:100%" class="gallery" alt="galleri">
   </div>
 
   <div class="slides">
     <div class="numbertext">4 ud af 6</div>
-      <img class="gallery" src="images/b4.jpg" style="width:100%" alt="Galleri">
+      <img src="images/b4.jpg" style="width:100%" class="gallery" alt="galleri">
   </div>
 
       <div class="slides">
     <div class="numbertext">5 ud af 6</div>
-      <img class="gallery" src="images/b5.jpg" style="width:100%" alt="Galleri">
+      <img src="images/b5.jpg" style="width:100%" class="gallery" alt="galleri">
   </div>
     
       <div class="slides">
     <div class="numbertext">6 ud af 6</div>
-      <img class="gallery" src="images/b6.jpg" style="width:100%" alt="Galleri">
+      <img src="images/b6.jpg" style="width:100%" class="gallery" alt="galleri">
   </div>
     
     
   <div class="bg">
-    <img src="images/cloud.png" id="cloudbg" alt="#">
+    <img src="images/cloud.png" id="cloudbg" alt="Cloud">
     </div>
 <div class="buttons">
   <!-- Next and previous buttons -->
@@ -92,6 +95,29 @@
 </div>
 <br>
 </div>
+	
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["slides"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
     
 	  
 </body>

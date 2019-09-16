@@ -75,18 +75,9 @@ html, body {
 	margin-top: 1350px;
 	margin-left: 57.8vw;
 }
+
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.gallerycontainer {
-  
-
-}
-
-.bg {
-   
-
-}
 
 #cloudbg {
     width: 60%;
@@ -99,7 +90,7 @@ html, body {
     
 }
 
-#gallery {
+.gallery {
     max-width: 500px;
     max-height: auto;
     position: absolute;
@@ -120,11 +111,31 @@ html, body {
     width: 500px;
 }
 
+
+
 /* Next & previous buttons */
-.prev, .next {
+.prev {
   cursor: pointer;
   position: absolute;
   top: 190vw;
+  left: 45vw;
+  width: 70px;
+  margin-top: -22px;
+  padding: 16px;
+  color: dimgrey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+    z-index: 100;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 190vw;
+  right: 25vw;
   width: 70px;
   margin-top: -22px;
   padding: 16px;

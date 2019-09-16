@@ -49,11 +49,31 @@ html, body {
 }
 
 
+#cloudboy{
+    position: relative;
+    width: 500px;
+    animation-name: pollepolle;
+    animation-duration: 5s;
+    z-index: 10;
+    
+}
 
-#cloudboy {
-	margin-left: 5vw;
-	margin-top: -300px;
-	position: fixed;
+#boy {
+    width: 500px;
+    height: auto;
+    position: absolute;
+	top: -200px;
+}
+
+
+
+@keyframes pollepolle {
+   from {
+        top: 700px;
+    }
+    to {
+			top: 0;
+		}
 }
 
 #thoughtbubble {
@@ -212,3 +232,44 @@ html, body {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+#fagcloud {
+	position:absolute;
+    margin-top: 2300px;
+	margin-right: 800px;
+	margin-left: 200px;
+}
+
+#fagikoner {
+	position:absolute;
+   margin-top: 2490px;
+	margin-left: 335px;
+    margin-right: 1000px;
+}
+
+#vaerdier {
+	position:absolute;
+    margin-top: 4000px;
+	margin-left: 100px;
+}
+
+#vaerdiertekst {
+	position:absolute;
+   margin-top: 4240px;
+	margin-left: 190px;
+    margin-right: 1000px;
+}
+
+#skolen {
+	position:absolute;
+    margin-top: 4770px;
+	margin-left: 800px;
+}
+
+#skolentekst {
+	position:absolute;
+   margin-top: 5000px;
+	margin-left: 1000px;
+    margin-right: 50px;
+}
+

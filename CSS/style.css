@@ -1,0 +1,205 @@
+
+html, body {
+
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 6000px;
+	font-family: 'Merriweather', serif;
+}
+
+#cloud1, #cloud2, #cloud3, #cloud4, #cloud5, #cloud6, #cloud7 {
+  position: absolute;
+  z-index: 100;
+}
+
+#cloud1{
+	margin-left: 70vw;
+	margin-top: 350px;
+}
+
+#cloud2{
+	margin-left: 60vw;
+	margin-top: 600px;
+}
+
+#cloud3{
+	margin-left: 2vw;
+	margin-top: 1400px;
+}
+
+#cloud4{
+	margin-left: 60vw;
+	margin-top: 2800px;
+}
+
+#cloud5{
+	margin-left: 70vw;
+	margin-top: 1100px;
+}
+
+#cloud6{
+	margin-left: 5vw;
+	margin-top: 3500px;
+}
+
+#cloud7{
+	margin-left: 40vw;
+	margin-top: 4000px;
+}
+
+#cloudboy {
+	margin-left: 5vw;
+	margin-top: -300px;
+	position: fixed;
+}
+
+#thoughtbubble {
+	margin-left: 500px;
+}
+
+.thoughtbubbleheader {
+	margin-left: 200px;
+	margin-top: -300px;
+	text-align: center;
+}
+
+#videocloud {
+	margin-top: 1300px;
+	margin-left: 50vw;
+	position: absolute;
+}
+
+#video {
+	position: absolute;
+	margin-top: 1350px;
+	margin-left: 57.8vw;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.gallerycontainer {
+  
+
+}
+
+.bg {
+   
+
+}
+
+#cloudbg {
+    width: 60%;
+    position: relative;
+    top: 150vw;
+    left: 40vw;
+    
+ 
+    
+    
+}
+
+#gallery {
+    max-width: 500px;
+    max-height: auto;
+    position: absolute;
+    left: 55vw;
+    top: 180vw;
+    
+    z-index: 1;
+    opacity: 0.8;
+    
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+.buttons {
+    width: 500px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 190vw;
+  width: 70px;
+  margin-top: -22px;
+  padding: 16px;
+  color: dimgrey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+    z-index: 100;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+display: none;
+  color: #f2f2f2;
+  font-size: 26px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 40vw;
+    right: 30vw;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

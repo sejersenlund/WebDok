@@ -15,6 +15,26 @@ function parallaxScroll(){
 	$('#cloud7').css('top',(0-(scrolled*.75))+'px');
 }
 
+window.addEventListener("scroll", function() {
+
+  var mySound = document.getElementById("myaudio");
+  var lyd = document.getElementById("lyd");
+  console.log("Er div #lyd synlig? " + elFllVsbl(lyd)); 
+
+  if (elFllVsbl(lyd)) { 
+    if (!(mySound.curentTime > 0)) {
+      mySound.play(); 
+    }
+  } else {
+    mySound.pause();
+    mySound.currentTime = 0; 
+  }
+})
+
+function elFllVsbl(el) {
+  return (el.getBoundingClientRect().top >= 0 && el.getBoundingClientRect().bottom < window.innerHeight);
+}
+
 var slideIndex = [1,1];
 var slideId = ["slides"]
 showSlides(1, 0);

@@ -112,7 +112,6 @@ html, body {
 
 .gallery {
     max-width: 600px;
-    max-height: auto;
     position: absolute;
     left: 55vw;
     top: 180vw;
